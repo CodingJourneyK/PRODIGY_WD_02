@@ -10,7 +10,7 @@ body {
     align-items: center;
     text-align: center;
     background: rgb(86,121,9);
-    background: linear-gradient(135deg, rgba(86,121,9,1) 35%, rgba(0,212,255,1) 100%);    /*background: linear-gradient(135deg, #033d09, #00b850, #6bb800);*/
+    background: linear-gradient(135deg, rgba(86,121,9,1) 35%, rgba(0,212,255,1) 100%);  
     height: 100vh;
     font-family: 'Arial', sans-serif;
 }
