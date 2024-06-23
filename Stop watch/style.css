@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(86,121,9);
+    background: linear-gradient(135deg, rgba(86,121,9,1) 35%, rgba(0,212,255,1) 100%);    /*background: linear-gradient(135deg, #033d09, #00b850, #6bb800);*/
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 400px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stopwatch {
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#result {
+    margin-top: 20px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 6px solid #29bece;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 206, 201, 0.1);
+    box-shadow: inset 0 0 20px rgba(0, 206, 201, 0.5);
+}
+
+#result span {
+    font-size: 35px;
+    color: #d6e0d0;
+}
+
+.btns {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btns button {
+    color: #fff;
+    background-color: #226210;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btns button:hover {
+
+    background-color: #09cde3a5;
+    transform: translateY(-10px);
+}
+
+#laps {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #dfe6e9;
+}
+
+.lap {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    text-align: left;
+    color: #dfe6e9;
+}
